@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-steps/1.1.0/jquery.steps.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css" integrity="sha512-4/nCjDdxwF8Aa1b6nZmx6U2x71xPnM4QQyjEaI/xsmCzDwSns8WJLb0U6TGQI4Ub4xIKXlCjO/u+yR+R34uxsQ==" crossorigin="anonymous" />
+
+    <title>Landin Page</title>
+</head>
+<body>
+    <!--SECCION INICIO-->
+    <section id="inicio">
+        <div class="container">
+            <header>
+                <div class="container-header">
+                    <h1><a href="#inicio">NeoGen</a></h1>
+                    <nav id="nav" class="">
+                        <ul id="Links">
+                        <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">Inicio</a></li>
+                        <li><a href="#sobremi" onclick="seleccionar(this)">Sobre mi</a></li>
+                        <li><a href="#contacto" onclick="seleccionar(this)">Contacto</a></li>
+                        <li><a href="#newsletter" onclick="seleccionar(this)">Suscribirse</a></li>
+                        </ul>
+                    </nav>
+                    <!--ICONOS DEL MENU RESPOSIVE-->
+                    <div id="icono-nav" onclick="resposiveMenu()">
+                        <i class="fa-solid fa-bars"></i>                       
+                    </div>
+
+                    <!--ICONOS REDES SOCIALES-->
+                    <div class="redes">
+                        <a href="https://youtu.be/dQw4w9WgXcQ"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram-square"></i></a>
+                    </div>
+                </div>    
+            </header>
+            <div class="presentacion">
+                <p class="bienvenido">Bienvenidos</p>
+                    <h2>Soy <span>NeoGen</span>, artista digital</h2>
+                    <p class="descripcion">Apasionado por la creatividad y el diseño. En mi espacio digital
+                    encontrarás una selección de mis trabajos más recientes y una muestra de mi estilo artístico. 
+                    Mi objetivo es ofrecerte una experiencia visual única y estimulante, que te inspire a 
+                    explorar nuevos horizontes en el mundo del diseño gráfico. Gracias por visitar mi sitio, 
+                    ¡espero que disfrutes tu estancia!</p>
+                    <a href="#portfolio">Ver proyectos</a>
+            </div>
+        </div>
+    </section>
+    <!--SECCION SOBRE MI-->
+    <section id="sobremi">
+        <div class="contenedor-foto">
+            <img src="images/foto_resolucion_peque__a_cv.jpg" alt="">
+        </div>
+        <div class="sobremi">
+            <p class="titulo-seccion">Sobre mi</p>
+            <h2>Hola, soy <span>NeoGen</span></h2>
+            <h3>artista digital</h3>
+            <p>Me describo como una persona apasionada por el diseño y la creatividad. Me gradué en la Universidad Argentina de la Empresa con una 
+                Licenciatura en Diseño Gráfico y desde entonces he estado trabajando en este campo, 
+                enfocándome en crear diseños atractivos y efectivos que ayuden a mis clientes a transmitir su mensaje de manera clara y convincente. <br>
+                Me encanta experimentar con nuevas técnicas y estilos para mantener mi trabajo fresco y actualizado. 
+                Siempre estoy en busca de nuevos desafíos creativos que me permitan expandir mi conocimiento y habilidades en el diseño gráfico. <br>
+                Si deseas trabajar conmigo o simplemente deseas saludar, no dudes en ponerte en contacto conmigo.
+                También puedes ver algunos de mis proyectos anteriores para tener una idea de mi estilo y habilidades. ¡Espero que te gusten!
+            </p>
+
+        </div>
+
+    </section>
+
+    <!--SECCION PORTAFOLIO -->
+    <section id="portfolio" >
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="images/erick-butler-3XQlnryKz0o-unsplash.jpg" alt="">
+                <div class="info">
+                    <h4>Descripcion del Proyecto</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="images/simenlee.jpg" alt="">
+                <div class="info">
+                    <h4>Descripcion del Proyecto</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="images/unsplash.jpg" alt="">
+                <div class="info">
+                    <h4>Descripcion del Proyecto</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="images/simon-lee-IEgvy4o3byM-unsplash.jpg" alt="">
+                <div class="info">
+                    <h4>Descripcion del Proyecto</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="images/simon-lee-hbFKxsIqclc-unsplash.jpg" alt="">
+                <div class="info">
+                    <h4>Descripcion del Proyecto</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="images/simon-lee-2FWcYzN7X_c-unsplash.jpg" alt="">
+                <div class="info">
+                    <h4>Descripcion del Proyecto</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!--SECCION CONTACTO-->
+<section id="contacto">
+    <h3 class="titulo-seccion">Contactame ahora</h3>
+    <div class="contenedor-form">
+        <form action="" id="contact-form">
+            <!-- Paso 1: Nombre y correo electrónico -->
+            <div class="paso" id="paso1">
+                <div class="fila mitad">
+                    <input type="text" placeholder="Nombre completo" class="input-mitad" name="nombre" id="nombre">
+                    <input type="text" placeholder="Direccion de email" class="input-mitad" name="correo" id="correo">
+                </div>
+                <input type="button" value="Siguiente" class="btn-siguiente" id="btn-siguiente1">
+            </div>
+
+            <!-- Paso 2: Tema del mensaje -->
+            <div class="paso oculto" id="paso2">
+                <div class="fila">
+                    <input type="text" placeholder="Tema..." class="input-full" name="tema" id="tema">
+                </div>
+                <input type="button" value="Anterior" class="btn-anterior" id="btn-anterior2">
+                <input type="button" value="Siguiente" class="btn-siguiente" id="btn-siguiente2">
+            </div>
+
+            <!-- Paso 3: Mensaje y enviar -->
+            <div class="paso oculto" id="paso3">
+                <div class="fila">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Tu mensaje..." class="input-full" name="mensaje" id="mensaje"></textarea>
+                </div>
+                <input type="button" value="Anterior" class="btn-anterior" id="btn-anterior3">
+                <input type="submit" value="Enviar Mensaje" class="btn-enviar" id="btn-enviar">
+            </div>
+        </form>
+    </div>
+</section>
+
+    <!-- SECCION SUSCRIPCION -->
+    <section id="newsletter">
+        <h3 class="titulo-seccion">Suscribete a nuestro newsletter</h3>
+        <div class="contenedor-form">
+            <form action="">
+                <div class="fila mitad">
+                    <input type="text" placeholder="Nombre completo" class="input-mitad" name="nombre-n" id="nombre-n">
+                    <input type="text" placeholder="Direccion de email" class="input-mitad" name="correo-n" id="correo-n">
+                </div>
+                <input type="submit" value="Suscribirse" class="btn-enviar-newsletter">
+            </form>
+        </div>
+    </section>
+<!-- SECCION API -->
+    <h1>Obtener Clima</h1>
+	<p>Ingresa el nombre de una ciudad para obtener el clima actual:</p>
+	<input type="text" id="ciudad" placeholder="Ciudad">
+	<button id="btn-obtener-clima">Obtener Clima</button>
+	<div id="resultado"></div>
+
+<!--SECCION FOOTER-->
+    <footer>
+        <p>Todos los derechos reservados - 2022</p>
+        <div class="redes">
+            <a href="https://youtu.be/dQw4w9WgXcQ"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram-square"></i></a>
+        </div>
+
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
